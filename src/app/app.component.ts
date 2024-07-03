@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Palindromos';
+
+  palindromo:string = '';
+  esPalindromo:string = '';
+
+  constructor(){ 
+  }
+
+  verificarPalindromo(){
+    let sinEspacios:string;
+    console.log(this.palindromo);
+    
+    sinEspacios = this.palindromo.replaceAll(" ", "")
+
+
+    sinEspacios == sinEspacios.split('').reverse().join().replaceAll(',','') ? this.esPalindromo = 'es palindormo' : this.esPalindromo = 'no es un palindromo';
+    
+    
+    
+    
+
+  }
 }
