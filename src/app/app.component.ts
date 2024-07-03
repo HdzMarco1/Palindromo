@@ -20,8 +20,12 @@ export class AppComponent {
     
     sinEspacios = this.palindromo.replaceAll(" ", "")
 
-
-    sinEspacios == sinEspacios.split('').reverse().join().replaceAll(',','') ? this.esPalindromo = 'es palindormo' : this.esPalindromo = 'no es un palindromo';
+    if(sinEspacios == ''){
+      this.esPalindromo = 'escriba en el input'
+    }else{
+      sinEspacios == sinEspacios.split('').reverse().join().replaceAll(',','') ? this.esPalindromo = 'es palindormo' : this.esPalindromo = 'no es un palindromo';
+    }
+    
     
     
     

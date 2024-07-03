@@ -1,8 +1,12 @@
-<h1>palindromos</h1>
 
-<form>
-  <input type="text" name="palindromo" id="palindromo" [(ngModel)]="palindromo">
-  <button (click)="verificarPalindromo()">Verificar Palindromo</button>
-</form>
 
-<h2>resultado: {{esPalindromo}}</h2>
+<div class="centrar">
+  <h1>palindromos</h1>
+  <form>
+    <input type="text" name="palindromo" id="palindromo" [(ngModel)]="palindromo" class="input-group-text mb-3 m-auto" placeholder="escribe aqui">
+    <button (click)="verificarPalindromo()" class="boton btn btn-success">Verificar Palindromo</button>
+  </form>
+
+  <h2>resultado: {{esPalindromo}}</h2>
+</div>
+
